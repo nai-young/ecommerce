@@ -3,15 +3,20 @@ import express from 'express'
 import dotenv from 'dotenv'
 import config from './config'
 import mongoose from 'mongoose'
+import userRoute from './routes/user.route'
 
 dotenv.config()
 
 const mongodbUrl = config.MONGODB_URL
 mongoose.connect(mongodbUrl, {
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true
 }).catch(err => console.log(err.reason))
 
 const app = express()
+
+app.use('/users', userRoute)
 
 app.get('/products/:id', (req, res) => {
   const productId = req.params.id
