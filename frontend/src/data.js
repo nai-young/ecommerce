@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   products: [
     {
       _id:'1',
@@ -8,7 +8,8 @@ export default {
       price: 60,
       brand: 'Nike',
       rating: 4.5,
-      numReviews: 10
+      numReviews: 10,
+      countInStock: 0
     },
     {
       _id:'2',
@@ -18,7 +19,8 @@ export default {
       price: 70,
       brand: 'Adidas',
       rating: 4.5,
-      numReviews: 3
+      numReviews: 3,
+      countInStock: 6
     },
     {
       _id:'3',
@@ -28,7 +30,8 @@ export default {
       price: 40,
       brand: 'Nike',
       rating: 4.5,
-      numReviews: 6
+      numReviews: 6,
+      countInStock: 6
     },
     {
       _id:'4',
@@ -38,7 +41,8 @@ export default {
       price: 60,
       brand: 'Nike',
       rating: 4.5,
-      numReviews: 10
+      numReviews: 10,
+      countInStock: 6
     },
     {
       _id:'5',
@@ -48,7 +52,8 @@ export default {
       price: 70,
       brand: 'Adidas',
       rating: 4.5,
-      numReviews: 3
+      numReviews: 3,
+      countInStock: 6
     },
     {
       _id:'6',
@@ -58,7 +63,8 @@ export default {
       price: 40,
       brand: 'Nike',
       rating: 4.5,
-      numReviews: 6
+      numReviews: 6,
+      countInStock: 6
     }
   ]
 }
